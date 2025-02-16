@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: qdlsSpring
+
+  datasource:
+    url: ${DB_CONNECTION:jdbc:mysql://localhost:3306/core-test}
+    username: ${DB_USER:admin}
+    password: ${DB_PWD:12qwaszx}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    defer-datasource-initialization: true

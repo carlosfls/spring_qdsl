@@ -8,6 +8,10 @@ spring:
     password: ${DB_PWD}
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     show-sql: true
-    defer-datasource-initialization: true
+    defer-datasource-initialization: false
+  liquibase:
+    change-log: classpath:db.changelog/db.changelog-master.yaml
+    enabled: true
+    show-summary: summary

@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2025_CC_01
+      author: carlos
+      changes:
+        - sqlFile:
+            encoding: utf8
+            path: ../data/create_country_v2.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 2025_CC_02
+      author: carlos
+      changes:
+        - sqlFile:
+            encoding: utf8
+            path: ../data/create_city_v2.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 2025_CC_03
+      author: carlos
+      changes:
+        - sqlFile:
+            encoding: utf8
+            path: ../data/create_enterprise_v2.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 2025_CC_04
+      author: carlos
+      changes:
+        - sqlFile:
+            encoding: utf8
+            path: ../data/create_establishment_v2.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 2025_CC_05
+      author: carlos
+      changes:
+        - sqlFile:
+            encoding: utf8
+            path: ../data/populate_tables.sql
+            relativeToChangelogFile: true

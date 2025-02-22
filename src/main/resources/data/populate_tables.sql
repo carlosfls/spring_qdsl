@@ -67,28 +67,28 @@ VALUES
     (1, NOW(), NOW(), 'admin', 'admin', '987654321', 'Maple Foods Ltd.', 'www.maplefoods.ca', 'maple_logo.png', 2, 'MFL', 'Maple Foods', 'MFL-001', 'Premium food products from Canada.', 'info@maplefoods.ca', 'www.maplefoods.ca', 'logo_maple.png', 1, 'Quality and tradition', '+1-800-987-6543', '4-star', 2),
 
     -- Empresa en México (country_id = 3)
-    (1, NOW(), NOW(), 'admin', 'admin', '456789123', 'Mexican Crafts Co.', 'www.mexicancrafts.com', 'crafts_logo.png', 3, 'MCC', 'Mexican Crafts', 'MCC-001', 'Handmade crafts from Mexico.', 'info@mexicancrafts.com', 'www.mexicancrafts.com', 'logo_crafts.png', 1, 'Preserving cultural heritage', '+52-55-1234-5678', '3-star', 3),
+    (1, NOW(), NOW(), 'admin', 'admin', '456789123', 'Mexican Crafts Co.', 'www.mexicancrafts.com', 'crafts_logo.png', 3, 'MCC', 'Mexican Crafts', 'MCC-001', 'Handmade crafts from Mexico.', 'info@mexicancrafts.com', 'www.mexicancrafts.com', 'logo_crafts.png', 1, 'Preserving cultural heritage', '+52-55-1234-5678', '3-star', 1),
 
     -- Empresa en Brasil (country_id = 4)
-    (1, NOW(), NOW(), 'admin', 'admin', '321654987', 'Amazon Eco Tours', 'www.amazonecotours.com.br', 'amazon_logo.png', 4, 'AET', 'Amazon Eco Tours', 'AET-001', 'Eco-friendly tours in the Amazon rainforest.', 'info@amazonecotours.com.br', 'www.amazonecotours.com.br', 'logo_amazon.png', 1, 'Sustainable tourism', '+55-11-9876-5432', '5-star', 4),
+    (1, NOW(), NOW(), 'admin', 'admin', '321654987', 'Amazon Eco Tours', 'www.amazonecotours.com.br', 'amazon_logo.png', 4, 'AET', 'Amazon Eco Tours', 'AET-001', 'Eco-friendly tours in the Amazon rainforest.', 'info@amazonecotours.com.br', 'www.amazonecotours.com.br', 'logo_amazon.png', 1, 'Sustainable tourism', '+55-11-9876-5432', '5-star', 1),
 
     -- Empresa en Argentina (country_id = 5)
-    (1, NOW(), NOW(), 'admin', 'admin', '654987321', 'Tango Music Records', 'www.tangomusic.com.ar', 'tango_logo.png', 5, 'TMR', 'Tango Music Records', 'TMR-001', 'Promoting tango music worldwide.', 'info@tangomusic.com.ar', 'www.tangomusic.com.ar', 'logo_tango.png', 1, 'Cultural promotion', '+54-11-1234-5678', '4-star', 5),
+    (1, NOW(), NOW(), 'admin', 'admin', '654987321', 'Tango Music Records', 'www.tangomusic.com.ar', 'tango_logo.png', 5, 'TMR', 'Tango Music Records', 'TMR-001', 'Promoting tango music worldwide.', 'info@tangomusic.com.ar', 'www.tangomusic.com.ar', 'logo_tango.png', 1, 'Cultural promotion', '+54-11-1234-5678', '4-star', 2),
 
     -- Empresa en España (country_id = 6)
-    (1, NOW(), NOW(), 'admin', 'admin', '789123456', 'Spanish Wines Co.', 'www.spanishwines.es', 'wines_logo.png', 6, 'SWC', 'Spanish Wines', 'SWC-001', 'Finest wines from Spain.', 'info@spanishwines.es', 'www.spanishwines.es', 'logo_wines.png', 1, 'Wine excellence', '+34-91-987-6543', '5-star', 6),
+    (1, NOW(), NOW(), 'admin', 'admin', '789123456', 'Spanish Wines Co.', 'www.spanishwines.es', 'wines_logo.png', 6, 'SWC', 'Spanish Wines', 'SWC-001', 'Finest wines from Spain.', 'info@spanishwines.es', 'www.spanishwines.es', 'logo_wines.png', 1, 'Wine excellence', '+34-91-987-6543', '5-star', 0),
 
     -- Empresa en Francia (country_id = 7)
-    (1, NOW(), NOW(), 'admin', 'admin', '159753486', 'Paris Fashion House', 'www.parisfashion.com', 'fashion_logo.png', 7, 'PFH', 'Paris Fashion House', 'PFH-001', 'Luxury fashion from Paris.', 'info@parisfashion.com', 'www.parisfashion.com', 'logo_fashion.png', 1, 'Elegance and style', '+33-1-2345-6789', '5-star', 7),
+    (1, NOW(), NOW(), 'admin', 'admin', '159753486', 'Paris Fashion House', 'www.parisfashion.com', 'fashion_logo.png', 7, 'PFH', 'Paris Fashion House', 'PFH-001', 'Luxury fashion from Paris.', 'info@parisfashion.com', 'www.parisfashion.com', 'logo_fashion.png', 1, 'Elegance and style', '+33-1-2345-6789', '5-star', 0),
 
     -- Empresa en Alemania (country_id = 8)
-    (1, NOW(), NOW(), 'admin', 'admin', '357951486', 'German Auto Works', 'www.germanautoworks.de', 'auto_logo.png', 8, 'GAW', 'German Auto Works', 'GAW-001', 'High-quality German automobiles.', 'info@germanautoworks.de', 'www.germanautoworks.de', 'logo_auto.png', 1, 'Engineering excellence', '+49-30-1234-5678', '5-star', 8),
+    (1, NOW(), NOW(), 'admin', 'admin', '357951486', 'German Auto Works', 'www.germanautoworks.de', 'auto_logo.png', 8, 'GAW', 'German Auto Works', 'GAW-001', 'High-quality German automobiles.', 'info@germanautoworks.de', 'www.germanautoworks.de', 'logo_auto.png', 1, 'Engineering excellence', '+49-30-1234-5678', '5-star', 0),
 
     -- Empresa en Italia (country_id = 9)
-    (1, NOW(), NOW(), 'admin', 'admin', '258369147', 'Italian Cuisine Ltd.', 'www.italiancuisine.it', 'cuisine_logo.png', 9, 'ICL', 'Italian Cuisine', 'ICL-001', 'Authentic Italian recipes.', 'info@italiancuisine.it', 'www.italiancuisine.it', 'logo_cuisine.png', 1, 'Taste of Italy', '+39-06-9876-5432', '4-star', 9),
+    (1, NOW(), NOW(), 'admin', 'admin', '258369147', 'Italian Cuisine Ltd.', 'www.italiancuisine.it', 'cuisine_logo.png', 9, 'ICL', 'Italian Cuisine', 'ICL-001', 'Authentic Italian recipes.', 'info@italiancuisine.it', 'www.italiancuisine.it', 'logo_cuisine.png', 1, 'Taste of Italy', '+39-06-9876-5432', '4-star', 1),
 
     -- Empresa en Japón (country_id = 10)
-    (1, NOW(), NOW(), 'admin', 'admin', '753159852', 'Tokyo Tech Solutions', 'www.tokyotech.jp', 'tokyo_logo.png', 10, 'TTS', 'Tokyo Tech Solutions', 'TTS-001', 'Cutting-edge technology from Japan.', 'info@tokyotech.jp', 'www.tokyotech.jp', 'logo_tokyo.png', 1, 'Innovation and precision', '+81-3-1234-5678', '5-star', 10);
+    (1, NOW(), NOW(), 'admin', 'admin', '753159852', 'Tokyo Tech Solutions', 'www.tokyotech.jp', 'tokyo_logo.png', 10, 'TTS', 'Tokyo Tech Solutions', 'TTS-001', 'Cutting-edge technology from Japan.', 'info@tokyotech.jp', 'www.tokyotech.jp', 'logo_tokyo.png', 1, 'Innovation and precision', '+81-3-1234-5678', '5-star', 1);
 
 
 -- Insertar datos de ejemplo en la tabla `establishment_v2`

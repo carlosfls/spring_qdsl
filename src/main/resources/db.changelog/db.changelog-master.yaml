@@ -37,5 +37,13 @@ databaseChangeLog:
       changes:
         - sqlFile:
             encoding: utf8
+            path: ../data/create_user.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 2025_CC_06
+      author: carlos
+      changes:
+        - sqlFile:
+            encoding: utf8
             path: ../data/populate_tables.sql
             relativeToChangelogFile: true

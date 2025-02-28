@@ -8,21 +8,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-
-import java.util.Date;
-import java.util.UUID;
 
 @Accessors(chain = true)
 @Entity
 @Getter
 @Setter
 @Table(name = "city")
-public class CityModel extends AbstractBaseAuditable {
+public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -53,12 +49,5 @@ public class CityModel extends AbstractBaseAuditable {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "country_id", insertable = false, updatable = false)
-    private CountryModel countryModel;
-
-    @PrePersist
-    public void prePersist(){
-        this.createdAt = new Date(System.currentTimeMillis());
-        this.uuid = UUID.randomUUID().toString();
-        this.setIsActive(true);
-    }
+    private Country country;
 }

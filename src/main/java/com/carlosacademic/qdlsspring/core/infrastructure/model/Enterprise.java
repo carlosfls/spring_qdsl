@@ -3,6 +3,7 @@ package com.carlosacademic.qdlsspring.core.infrastructure.model;
 import com.carlosacademic.qdlsspring.core.domain.model.enums.Typology;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -11,21 +12,19 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import java.util.Date;
 import java.util.List;
 
 @Accessors(chain = true)
 @Entity
 @Getter
 @Setter
-@Table(name = "enterprise_v2")
-public class EnterpriseV2 extends AbstractBaseAuditable {
+@Table(name = "enterprise")
+public class Enterprise {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -73,21 +72,13 @@ public class EnterpriseV2 extends AbstractBaseAuditable {
 
     private String phones;
 
-    private String experiencesDiners;
-
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     private Typology typology;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "country_id", insertable = false, updatable = false)
-    private CountryModel countryModel;
+    private Country country;
 
-    @OneToMany(mappedBy = "enterpriseV2", fetch = FetchType.LAZY)
-    private List<EstablishmentV2> establishments;
-
-    @PrePersist
-    public void prePersist(){
-        this.createdAt = new Date(System.currentTimeMillis());
-        this.setIsActive(true);
-    }
+    @OneToMany(mappedBy = "enterprise", fetch = FetchType.LAZY)
+    private List<Establishment> establishments;
 }

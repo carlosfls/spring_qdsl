@@ -17,8 +17,8 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Entity
-@Table(name = "establishment_v2")
-public class EstablishmentV2 {
+@Table(name = "establishment")
+public class Establishment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -67,9 +67,9 @@ public class EstablishmentV2 {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "city_id", insertable = false, updatable = false)
-    private CityModel cityModel;
+    private City city;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "enterprise_id", nullable = false, updatable = false, insertable = false)
-    private EnterpriseV2 enterpriseV2;
+    private Enterprise enterprise;
 }

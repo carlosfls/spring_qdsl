@@ -1,4 +1,4 @@
-package com.carlosacademic.qdlsspring.users.infrastructure.config;
+package com.carlosacademic.qdlsspring.commons.config;
 
 import com.querydsl.jpa.JPQLTemplates;
 import com.querydsl.jpa.impl.JPAQueryFactory;

@@ -21,7 +21,7 @@ public class QdslJpaUserRepositoryImpl implements UserRepository {
     private final JpaUserRepository jpaUserRepository;
 
     @Override
-    public List<com.carlosacademic.qdlsspring.users.domain.model.User> getAll() {
+    public List<User> getAll() {
         QUserEntity qUserModel = QUserEntity.userEntity;
         return jpaQueryFactory.selectFrom(qUserModel)
                 .stream()
@@ -30,7 +30,7 @@ public class QdslJpaUserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public com.carlosacademic.qdlsspring.users.domain.model.User getByUsername(String username) {
+    public User getByUsername(String username) {
         QUserEntity qUserModel = QUserEntity.userEntity;
         return jpaQueryFactory.selectFrom(qUserModel)
                 .where(qUserModel.username.eq(username))
@@ -41,7 +41,7 @@ public class QdslJpaUserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public com.carlosacademic.qdlsspring.users.domain.model.User getByUsernameIfIsActive(String username) {
+    public User getByUsernameIfIsActive(String username) {
         QUserEntity qUserModel = QUserEntity.userEntity;
         return jpaQueryFactory.selectFrom(qUserModel)
                 .where(qUserModel.username.eq(username).and(qUserModel.isActive))
@@ -52,7 +52,7 @@ public class QdslJpaUserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public com.carlosacademic.qdlsspring.users.domain.model.User create(User user) {
+    public User create(User user) {
         return Optional.of(user)
                 .map(UserModelEntityMapper::toEntity)
                 .map(jpaUserRepository::save)

@@ -63,12 +63,6 @@ public class EstablishmentV2 {
     @Column(name="pet_friendly", columnDefinition = "TINYINT UNSIGNED default 0", length = 1)
     private boolean petFriendly;
 
-    @Column(name = "mall_id")
-    private Long mallId;
-
-    @Column(name = "is_inside_mall")
-    private Boolean isMall;
-
     private String phones;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

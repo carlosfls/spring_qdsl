@@ -18,8 +18,6 @@ CREATE TABLE establishment_v2
     address        VARCHAR(255)               NULL,
     has_parking    TINYINT UNSIGNED DEFAULT 0 NULL,
     pet_friendly   TINYINT UNSIGNED DEFAULT 0 NULL,
-    mall_id        BIGINT                     NULL,
-    is_inside_mall BIT(1)                     NULL,
     phones         VARCHAR(255)               NULL,
     CONSTRAINT pk_establishment_v2 PRIMARY KEY (id)
 );
